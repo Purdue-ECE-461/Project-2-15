@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+
+from src.config import *
+import sys
+import json
+from src.installer import installDeps
+
+TEST_DIR = "src/test"
+
+if __name__ == '__main__':
+    if (len(sys.argv) < 2):
+        raise Exception("Incorrect input")
+    
+    task = sys.argv[1]
+
+    if task == "install":
+        installDeps()
+        print("4 dependencies installed...")
+
+    elif task == "test":
+        if LOG_LEVEL > 0: # pragma: no cover
+            LOG_FILE.write("Making sure the dependencies are installed")
+        installDeps()
+        if LOG_LEVEL > 0: # pragma: no cover
+            LOG_FILE.write(f"Running test with files in src/test\n")
+        import coverage
+        cov = coverage.Coverage(omit='run')
+        cov.start()
+
+        results = json.load(open("result.json", "r"))
+
+        tests = os.listdir(TEST_DIR)
+        testfiles = [f"{TEST_DIR}/{t}" for t in tests]
+        testfiles = sorted(testfiles)
+
+        totalTests = len(testfiles)
+        score = 0
+
+        from src.run import run
+        for t in testfiles:
+            # print(f"Running test from file {t}")
+            output = run(t)
+            numLines = len(output)
+            if numLines == results[t]:
+                score += 1
+            if LOG_LEVEL > 0: # pragma: no cover
+                LOG_FILE.write(f"Calculated output for file {t}\n")
+            if LOG_LEVEL > 1: # pragma: no cover
+                for o in output:
+                    LOG_FILE.write(o + "\n")
+
+        cov.stop()
+        cov.save()
+
+        cov.json_report(outfile="cov.txt")
+        
+        covReport = json.load(open("cov.txt", "r"))
+
+        coverageScore = covReport["totals"]["percent_covered"]
+
+        print(f"Total: {totalTests}")
+        print(f"Passed: {score}")
+        print(f'Converage: {coverageScore:.2f}%')
+        print(f"{score}/{totalTests} test cases passed. {coverageScore:.2f}% line coverage achived.")
+    else:
+        if LOG_LEVEL > 0: # pragma: no cover
+            LOG_FILE.write("Making sure the dependencies are installed")
+        installDeps()
+        filename = sys.argv[1]
+        from src.run import run
+        output = run(filename)
+        for o in output:
+            print(o)
+    LOG_FILE.close()

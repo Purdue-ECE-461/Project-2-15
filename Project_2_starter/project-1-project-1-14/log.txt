@@ -1,0 +1,772 @@
+Making sure the dependencies are installedRunning test with files in src/test
+Setting global variables
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.7821710828232917
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.6953732984167034
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.4579403909703102
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test10_25M
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.41589017987076754
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Accessing package.json file
+Got rampuptime score: 0.1156
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedJS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Got rampuptime score: 0.0
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedJS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test11_3G_lessKnown
+Accessing package.json file
+Got rampuptime score: 0.0
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedJS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test12_1N_noLinfo
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.8476560984376271
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.42460190400921755
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.5873514652862913
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test13_30M
+github.com/appsmithorg/appsmith not a npm packagae since it does not have a package.jsonCalculated output for file src/test/test14_nonNPM
+Calculated output for file src/test/test15_2_incorrect
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.725319941757198
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.694026521847035
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test16_5_incorrectAndCorrect
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.7371521185557584
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test17_1G_closeToIdeal
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.41589017987076754
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Calculated output for file src/test/test18_1N_badModule
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.7371521185557584
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.8188143939077219
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test19_20N_mostDependedUpon
+Calculated output for file src/test/test1_empty
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.35012780106762925
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedJS files  
+Runned linter
+Runned linter
+Repo link for package named "bloater" not found
+Accessing package.json file
+Got rampuptime score: 0.05450376159478591
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.24209999999999998
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Repo link for package named "3.0.0" not found
+Calculated output for file src/test/test20_30N
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.8666656667860175
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.611069021966302
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.6643016250113443
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Got rampuptime score: 0.354947024461967
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.4440833890087583
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.41202159672161165
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test2_10G
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.6643016250113443
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.8666656667860175
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Calculated output for file src/test/test3_10N
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.42460190400921755
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.5873514652862913
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.4856762997982046
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test4_3G
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.42460190400921755
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.5873514652862913
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.4856762997982046
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test5_3N
+Accessing package.json file
+Got rampuptime score: 0.5264089975122705
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test6_uniqueG
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.5277790684355806
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test7_1G
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.43078171978972407
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.6687611859627884
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Accessing package.json file
+Checking if license info exists
+License data obtained
+Checking license information for compatibility
+License compatibility check complete
+Got rampuptime score: 0.5026150539326073
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test8_10N_emptylines
+Accessing package.json file
+Got rampuptime score: 0.4542796274139724
+Initiating Bus Factor Calculations
+Making API Call to GitHub API
+API response recieved
+Processing response data
+Performing Calculations
+Bus Factor calculations completedProcessing input data
+Assigning scores
+JS files  
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Runned linter
+Calculated output for file src/test/test9_noLicenseInfo
