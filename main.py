@@ -1,25 +1,51 @@
-from flask import Flask
-from flask_restful import Api, Resource
-from google.cloud import storage
-import os
-
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'driven-actor-331522-1a1bc26b5b15.json'
-storage_client = storage.Client()
-
-bucket_name = 'repo_info'
-bucket = storage_client.bucket(bucket_name)
-bucket.location = 'US'
-bucket = storage_client.create_bucket(bucket)
-
+from flask import Flask, request
+from gcp_bigtable import table_search_by_name, table_search_by_id, table_update_by_id,table_insert
 
 app = Flask(__name__)
-api = Api(app)
+app.config["DEBUG"] = True
 
-class server(Resource):
-    def get(self):
-        return {"data": "Hello World"}
+@app.route('/project2/package', methods=['POST'])
+def pk_create():
+    request_body = request.get_json()
+    ID = request_body["metadata"]["ID"]
+    Name = request_body["metadata"]["Name"]
+    Version = request_body["metadata"]["Version"]
+    Content = request_body["data"]["Content"]
+    URL = request_body["data"]["URL"]
+    JSProgram = request_body["data"]["JSProgram"]
+    result = table_insert(ID,Name,Version,Content,URL,JSProgram)
+    if result == "Error, already exists":
+        return {"message": "Package exists, cannot insert, try udpate"}
+    else:
+        return {"message": "successed"}
 
-api.add_resource(server)
+@app.route('/project2/package/<pk_id>', methods=['GET'])
+def get_by_id(pk_id):
+    query = table_search_by_id(pk_id)
+    result = [dict(row) for row in query]
+    if len(result) == 0:
+        return {"message": "package {} not found".format(pk_id)}
+    result = result[0]
+    output = {
+        "metadata":{},
+        "data":{}
+    }
+    output["metadata"]["Name"] = result["Name"]
+    output["metadata"]["Version"] = result["Version"]
+    output["metadata"]["ID"] = result["ID"]
+    output["data"]["Content"] = result["Content"]
+    output["data"]["URL"] = result["URL"]
+    output["data"]["JSProgram"] = result["JSProgram"]
+    return output
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route('/project2/package/<pk_id>', methods=['PUT'])
+def put_by_id(pk_id):
+    request_body = request.get_json()
+    ID = request_body["metadata"]["ID"]
+    Name = request_body["metadata"]["Name"]
+    Version = request_body["metadata"]["Version"]
+    Content = request_body["data"]["Content"]
+    table_update_by_id(ID, Name, Version, Content)
+
+
+app.run()
