@@ -41,6 +41,7 @@ jobs:
       with:
         service_account_key: ${{ secrets.GKE_SA_KEY }}
         project_id: ${{ secrets.GKE_PROJECT }}
+        # TODO: this part needs an authentication configuration
 
     # Configure Docker to use the gcloud command-line tool as a credential
 
