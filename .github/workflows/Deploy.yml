@@ -27,17 +27,19 @@ jobs:
         service_account_key: ${{ secrets.GKE_SA_KEY }}
         project_id: ${{ secrets.GKE_PROJECT }}
         export_default_credentials: true
+        
 
     # Configure Docker to use the gcloud command-line tool as a credential
+    # Cited from: https://writeabout.net/2021/11/01/deploy-to-google-kubernetes-engine-using-github-actions/
     # helper for authentication
     - run: |-
-        gcloud --quiet auth configure-docker
+        gcloud --quiet auth configure-docker $GKE_REGION-docker.pkg.dev --quiet
     # Get the GKE credentials so we can deploy to the cluster
     - uses: google-github-actions/get-gke-credentials@v0.2.1
       with:
         cluster_name: ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_ZONE }}
-#         credentials: ${{ secrets.GKE_SA_KEY }}
+        credentials: ${{ secrets.GKE_SA_KEY }}
 
     # Build the Docker image
     - name: Build
