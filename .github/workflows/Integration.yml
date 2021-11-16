@@ -1,4 +1,4 @@
-name: Pylint
+name: Integration
 
 on: [push, pull_request]
 
@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8"]
+        # 3.6 is ecegrid version, 3.8 is developers' version
+        python-version: ["3.6", "3.8"]
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
