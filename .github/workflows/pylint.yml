@@ -16,15 +16,9 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       working-directory: Project_2_starter/project-1-project-1-14/src
-#        GITHUB_TOKEN: ${{GITHUB_TOKEN}}
-#        LOG_LEVEL: 1
-#        LOG_FILE: log.log
       run: |
         ./run install
     - name: Run Test file
       working-directory: Project_2_starter/project-1-project-1-14/src
-#        GITHUB_TOKEN: ${{GITHUB_TOKEN}}
-#        LOG_LEVEL: 1
-#        LOG_FILE: log.log
       run: |
         ./run test
