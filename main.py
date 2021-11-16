@@ -2,7 +2,6 @@ from flask import Flask, request
 from gcp_bigtable import table_search_by_name, table_search_by_id, table_update_by_id,table_insert
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
 
 @app.route('/project2/package', methods=['POST'])
 def pk_create():
@@ -48,4 +47,4 @@ def put_by_id(pk_id):
     table_update_by_id(ID, Name, Version, Content)
 
 
-app.run()
+app.run(debug=True)
