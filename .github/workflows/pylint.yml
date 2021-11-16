@@ -16,6 +16,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       working-directory: Project_2_starter/project-1-project-1-14
+      env:
         LOG_LEVEL: 1
       run: |
         chmod +x ./run
