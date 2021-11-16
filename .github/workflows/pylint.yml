@@ -17,4 +17,5 @@ jobs:
     - name: Install dependencies
       working-directory: Project_2_starter/project-1-project-1-14
       run: |
+        chmod +x ./run
         ./run install
