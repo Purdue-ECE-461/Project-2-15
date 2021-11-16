@@ -16,7 +16,8 @@ jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
     runs-on: ubuntu-latest
-
+    environment: production
+    
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -26,7 +27,7 @@ jobs:
       with:
         service_account_key: ${{ secrets.GKE_SA_KEY }}
         project_id: ${{ secrets.GKE_PROJECT }}
-        export_default_credentials: true
+#         export_default_credentials: true
         
 
     # Configure Docker to use the gcloud command-line tool as a credential
