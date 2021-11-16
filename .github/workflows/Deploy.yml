@@ -24,7 +24,6 @@ env:
   GKE_CLUSTER: ece-461-project  
   GKE_ZONE: us-west1-a
   DEPLOYMENT_NAME: ece-461-app
-#   ACTIONS_ID_TOKEN_REQUEST_URL: 
   IMAGE: static-site
 
 jobs:
@@ -42,20 +41,20 @@ jobs:
       with:
         service_account_key: ${{ secrets.GKE_SA_KEY }}
         project_id: ${{ secrets.GKE_PROJECT }}
-#         export_default_credentials: true
         
 
     # Configure Docker to use the gcloud command-line tool as a credential
-    # Cited from: https://writeabout.net/2021/11/01/deploy-to-google-kubernetes-engine-using-github-actions/
+
     # helper for authentication
     - run: |-
         gcloud --quiet auth configure-docker
         
-    - uses: google-github-actions/auth@v0.4.0
-      with:
-        service_account: wxjdsr@126.com
-        workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-        credentials_json: ${{ secrets.gcp_credentials }}
+    # Cited from: https://writeabout.net/2021/11/01/deploy-to-google-kubernetes-engine-using-github-actions/
+#     - uses: google-github-actions/auth@v0.4.0
+#       with:
+#         service_account: wxjdsr@126.com
+#         workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+#         credentials_json: ${{ secrets.gcp_credentials }}
         
     # Get the GKE credentials so we can deploy to the cluster
     - uses: google-github-actions/get-gke-credentials@v0.2.1
