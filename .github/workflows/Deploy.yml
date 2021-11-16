@@ -33,7 +33,7 @@ jobs:
     # Cited from: https://writeabout.net/2021/11/01/deploy-to-google-kubernetes-engine-using-github-actions/
     # helper for authentication
     - run: |-
-        gcloud --quiet auth configure-docker $GKE_REGION-docker.pkg.dev --quiet
+        gcloud --quiet auth configure-docker
     # Get the GKE credentials so we can deploy to the cluster
     - uses: google-github-actions/get-gke-credentials@v0.2.1
       with:
