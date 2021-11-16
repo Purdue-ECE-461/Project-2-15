@@ -24,7 +24,7 @@ env:
   GKE_CLUSTER: ece-461-project  
   GKE_ZONE: us-west1-a
   DEPLOYMENT_NAME: ece-461-app
-  ACTIONS_ID_TOKEN_REQUEST_URL: 
+#   ACTIONS_ID_TOKEN_REQUEST_URL: 
   IMAGE: static-site
 
 jobs:
