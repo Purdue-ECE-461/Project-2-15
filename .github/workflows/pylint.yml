@@ -17,8 +17,9 @@ jobs:
     - name: Install dependencies
       working-directory: Project_2_starter/project-1-project-1-14
       env:
-        GITHUB_TOKEN: ${{secrets.GH_ACCESS_TOKEN}}
+        GITHUB_TOKEN: ${{GITHUB_TOKEN}}
         LOG_FILE: info.log
         LOG_LEVEL: 1
       run: |
+        chmod +x ./run
         ./run install
