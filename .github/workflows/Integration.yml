@@ -24,6 +24,12 @@ jobs:
       run: |
         chmod +x ./run
         ./run install
+    - name: Lint with flake8
+    # Cited from: https://www.youtube.com/watch?v=WTofttoD2xg&t=692s
+      run: |
+        pip install flake8
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run test file
       working-directory: Project_2_starter/project-1-project-1-14
       env:
