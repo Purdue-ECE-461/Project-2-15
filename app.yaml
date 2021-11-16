@@ -1,6 +1,6 @@
 runtime: python
 env: flex
-entrypoint: gunicorn -b :5001 main:app
+entrypoint: gunicorn -b :$PORT main:app
 
 runtime_config:
   python_version: 3
@@ -8,7 +8,3 @@ runtime_config:
 automatic_scaling:
   min_num_instances: 1
   max_num_instances: 8
-
-network:
-  forwarded_ports:
-    - 2222/tcp

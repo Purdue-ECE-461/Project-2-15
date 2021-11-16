@@ -47,4 +47,5 @@ def put_by_id(pk_id):
     table_update_by_id(ID, Name, Version, Content)
 
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
