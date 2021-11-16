@@ -35,6 +35,11 @@ jobs:
     # helper for authentication
     - run: |-
         gcloud --quiet auth configure-docker
+        
+    - uses: google-github-actions/auth@v0.4.0
+      with:
+        credentials_json: ${{ secrets.gcp_credentials }}
+        
     # Get the GKE credentials so we can deploy to the cluster
     - uses: google-github-actions/get-gke-credentials@v0.2.1
       with:
