@@ -8,7 +8,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: ece-461-project  
-  GKE_ZONE: us-west1
+  GKE_ZONE: us-west1-a
   DEPLOYMENT_NAME: ece-461-app
   IMAGE: static-site
 
