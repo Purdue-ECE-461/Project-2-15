@@ -21,5 +21,4 @@ jobs:
         LOG_FILE: info.log
         LOG_LEVEL: 1
       run: |
-        chmod +x ./run
         ./run install
