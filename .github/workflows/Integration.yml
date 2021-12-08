@@ -16,7 +16,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
-      working-directory: Project_2_starter/project-1-project-1-14
+      working-directory: package_rate/project-1-project-1-14
       env:
         GITHUB_TOKEN: ${{secrets.GH_ACCESS_TOKEN}}
         LOG_FILE: info.log
@@ -31,7 +31,7 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run test file # Test if the old files are affected
-      working-directory: Project_2_starter/project-1-project-1-14
+      working-directory: package_rate/project-1-project-1-14
       env:
         GITHUB_TOKEN: ${{secrets.GH_ACCESS_TOKEN}}
         LOG_FILE: info.log
