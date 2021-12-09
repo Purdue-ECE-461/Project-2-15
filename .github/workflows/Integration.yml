@@ -15,10 +15,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-    - name: pre-install dependencies for check
-      run: |
-        pip install coverage
-        pip install requests
     - name: Install dependencies
       working-directory: package_rate
       env:
