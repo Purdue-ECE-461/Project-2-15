@@ -1,5 +1,5 @@
 import json
-from config import *
+from src.config import *
 
 def compatibilityCheck(licenseInfo):
     if LOG_LEVEL == 2: # pragma: no cover
