@@ -176,7 +176,7 @@ def overallScore(data):
     totalScore *= data[0]
     return totalScore
 
-def run(filename):
+def getScore(filename):
     listOfList = []
     totalScoreList = []
 
@@ -188,6 +188,7 @@ def run(filename):
                 continue
             metricRes = calcMetrics(githubLink)
             if metricRes != None:
+                metricRes.append(line)
                 metricRes.append(line)
                 totalScore = overallScore(metricRes)
                 totalScore = round(totalScore, 2)
@@ -201,9 +202,15 @@ def run(filename):
         inds = B.argsort()[::-1]
 
         sorted_a = A[inds]
-        output = []
-        for module in sorted_a:
-            output.append(f"{module[5]} {module[6]} {module[1]} {module[4]} {module[2]} {module[3]} {module[0]}")
+
+    return sorted_a
+
+
+def run(filename):
+    sorted_a = getScore(filename)
+    output = []
+    for module in sorted_a:
+        output.append(f"{module[5]} {module[6]} {module[1]} {module[4]} {module[2]} {module[3]} {module[0]}")
         
-    # print(filename)
+# print(filename)
     return output

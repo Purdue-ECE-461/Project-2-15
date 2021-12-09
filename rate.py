@@ -1,4 +1,7 @@
 import sys
+
+from package_rate.src.run import getScore
+
 sys.path.append('/package_rate/src')
 
 # Original Description:
@@ -11,4 +14,5 @@ sys.path.append('/package_rate/src')
 # If there are two dependencies, one pinned to this degree,
 # then they should receive a ½ = 0.5 rating).
 
-run()
+
+# getScore()
