@@ -15,6 +15,10 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+    - name: pre-install dependencies for check
+      run: |
+        pip install coverage
+        pip install requests
     - name: Install dependencies
       working-directory: package_rate
       env:
@@ -24,9 +28,6 @@ jobs:
       run: |
         chmod +x ./run
         ./run install
-
-
-        pip install coverage
     - name: Lint with flake8
     # Cited from: https://www.youtube.com/watch?v=WTofttoD2xg&t=692s
       run: |

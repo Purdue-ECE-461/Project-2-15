@@ -5,8 +5,7 @@ def runCmd(cmd):
     subp.stdout.read()
 
 def installDeps():
-    runCmd("pip3 install --user -r requirements.txt")
-    # runCmd("pip3 install --user -r src/requirements.txt")
+    runCmd("pip3 install --user -r src/requirements.txt")
 
     runCmd("wget https://nodejs.org/dist/v14.18.0/node-v14.18.0-linux-x64.tar.xz")
     runCmd("tar -xf node-v14.18.0-linux-x64.tar.xz")
