@@ -1,5 +1,5 @@
 from datetime import datetime
-from src.config import *
+from config import *
 
 NUM_SECONDS_IN_MONTH = 60*60*24*30 * 3
 NUM_SECONDS_IN_WEEK = 60*60*24*7

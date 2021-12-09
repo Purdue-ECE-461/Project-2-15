@@ -1,7 +1,7 @@
 import os
 import subprocess
 import random
-from src.config import *
+from config import *
 
 def getjs(packagePath):
     outlist = []

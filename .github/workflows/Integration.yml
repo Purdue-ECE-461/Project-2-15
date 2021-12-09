@@ -24,6 +24,9 @@ jobs:
       run: |
         chmod +x ./run
         ./run install
+
+
+        pip install coverage
     - name: Lint with flake8
     # Cited from: https://www.youtube.com/watch?v=WTofttoD2xg&t=692s
       run: |

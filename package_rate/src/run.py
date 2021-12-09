@@ -1,15 +1,15 @@
 import sys
 import requests
-from src.config import *
+from config import *
 import shutil
 import zipfile
 import numpy
 
-from src.rampuptime import rampuptime
-from src.busfactor import busFactor, busFactorCalculations
-from src.license import licenseCheck
-from src.reponsivemaintenance import responsive
-from src.correctness import correctness
+from rampuptime import rampuptime
+from busfactor import busFactor, busFactorCalculations
+from license import licenseCheck
+from reponsivemaintenance import responsive
+from correctness import correctness
 
 MOST_STARS = 333506
 
