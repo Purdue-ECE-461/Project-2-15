@@ -61,7 +61,7 @@ if __name__ == '__main__':
         print(f"Total: {totalTests}")
         print(f"Passed: {score}")
         print(f'Converage: {coverageScore:.2f}%')
-        print(f"{score}/{totalTests} test cases passed. {coverageScore:.2f}% line coverage achived.")
+        print(f"{score}/{totalTests} test cases passed. {coverageScore:.2f}% line coverage achieved.")
     else:
         if LOG_LEVEL > 0: # pragma: no cover
             LOG_FILE.write("Making sure the dependencies are installed")
