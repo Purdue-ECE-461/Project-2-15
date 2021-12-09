@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Project_2_starter/project-1-project-1-14/src')
+sys.path.append('/package_rate/src')
 
 # Original Description:
 # The “rate” option should provide the net score and sub-scores from Project 1,
