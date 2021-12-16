@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "driven-actor-331522",
+  "private_key_id": "1a1bc26b5b15c72e98192d92aa9e726159f0c552",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCVmVrhCu8ou4zV\n68Z65lhmOWcX9r7QZLDzT9i9eMlPICMXz+BC0zbUJGCuTWmxnwcJxjs5iMur5nPe\nWf+jOfJ3/csPdZ5zradGs/nCxaCF1Mn/ZeQBocP1IHF7BYycZjXqaU2fqA6hjc5S\nwMxKWubZ75pUjieBFtz7TSVs+7l+GcO42YZMqenOHilEkpaZf3fPKrT7IUxSIKUL\nbLPoDDCqC2Vzo2B7nyTvyl5Ut/ccskKICLNIL2XisbtkjnyAgnR65g2jMBpNP1RY\nHAGLJVObePdLJOgeLT4+D7ypxYDYGko96/xALID9vtiqg4TNRxXZTJKRnvn9lQOb\n71+I49KJAgMBAAECggEACJu0FShDCgfdwyb/qy2DR3GU5zX7daQfowaUkRWI1vDh\nWBLOA6Zh/KvRtOHvO6lsFyHFIWrH1n7KqtAos8CnPUSZOUziNuOWkSzUycKDucO8\ncmHvcHEZpKqu4P55IHxIrLINxYq++cieR1iBAOPRbhe5nJU3/Hd/dIX0SfzDqBf2\nqfATDKM17aSd9LCWGHq/GZKtncj9ZvrWxzLYQdtaLEpDUArLXsiIWASmYgFckB6O\nJMpCjGufn2puW8dfsfdZsJiNI9PrZVprwqfs9Sth1pC6QGyOjZOG6lse1FzNgTnF\nHfD2LBl+D1N8FPrOZpARu/SwREyVywc1AcoX0QGuEQKBgQDIoQUOvICO5fc0Z+AI\nW3tuvbZakqV7lJaCJYuX6EEcRIr7byfIKXKtx+DqhALJQ35hlNsgcd0p2uTZmls4\nLCuG5DFFDBWm/hTK0E2AnGvXfrJil/QRczY/jevgHSJpt6nMQoT5J3woWtZMrYWq\nA6pkJf0n2wGcUvw/R5Dtw56DsQKBgQC+4u6T8PsUO3fxtcnYlFu4MkQiTeZWqT4o\nBUr8gRJHnS32NAdIAjZvkP9GgksWncmUXrjBeExgZZQpvcutZCUf1/o9FE/RVfvm\nyi0kv2uLcNq4kQYoarlSlX46c4/UJgNCk9TF8g9daLhWmYX4fuyqxkfXVDfSXmNf\nocroZD0qWQKBgD3wgEg5aBM16ijyvNa3r5bT2R2DUrWhfQn3H26plJhujN3tRkHk\nkfQW1lhwow+R1822kCQnIxmN68NGhU0FTfbaMl/XyEODA9ZNku/W2vBvvBD2SrKs\neB4M6bqKJBqxSim2i6kESK+Iw8puc+q2MP+0PsD0Oz4Q3LGInbTaBPExAoGAZnVW\nS7BYhHabHfFOo2KWjJrmeWdI0JFNHJwisL/y+N+EMReiJOOTJnU0oDsFZOFStsHU\n93vDuyYqzfDi53HOf3YlCi3h3eICMNGqQ4Q/jHwJ2nF1VbJbQNmfBG7M77lrnIvO\n9GTGHIQ+FbWX9FbkX5HIM+svf0pMmqM0T2KmdhkCgYApUg1D0fjbTZVro4SpOpNt\ndempbWLX0STVWglXAJPspADkpEiLB67wGdN1EdFfQ8/fERNkFeUcq4hs3N7pZ00o\nCZNoSrXla3NDzOCegeXqGaMNObVkGFTTpGgaAaRDsJcbK8xtTeq1g66RSqBbQeU5\n3SAlshuo7ltRnH+ku0P68Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "steven-xue@driven-actor-331522.iam.gserviceaccount.com",
+  "client_id": "104787249171930995126",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/steven-xue%40driven-actor-331522.iam.gserviceaccount.com"
+}

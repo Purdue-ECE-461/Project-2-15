@@ -1,0 +1,81 @@
+# Copyright 2021 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
+  GKE_CLUSTER: ece-461-project  
+  GKE_ZONE: us-west1-a
+  DEPLOYMENT_NAME: ece-461-app
+  IMAGE: static-site
+
+jobs:
+  setup-build-publish-deploy:
+    name: Setup, Build, Publish, and Deploy
+    runs-on: ubuntu-latest
+    environment: production
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Setup gcloud CLI
+    - uses: google-github-actions/setup-gcloud@v0.2.0
+      with:
+        service_account_key: ${{ secrets.GKE_SA_KEY }}
+        project_id: ${{ secrets.GKE_PROJECT }}
+        # TODO: this part needs an authentication configuration
+
+    # Configure Docker to use the gcloud command-line tool as a credential
+
+    # helper for authentication
+    - run: |-
+        gcloud --quiet auth configure-docker
+#
+#    # Cited from: https://writeabout.net/2021/11/01/deploy-to-google-kubernetes-engine-using-github-actions/
+##     - uses: google-github-actions/auth@v0.4.0
+##       with:
+##         service_account: ${{ secrets.service_account }}
+##         workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+##         credentials_json: ${{ secrets.gcp_credentials }}
+#
+#    # Get the GKE credentials so we can deploy to the cluster
+#    - uses: google-github-actions/get-gke-credentials@v0.2.1
+#      with:
+#        cluster_name: ${{ env.GKE_CLUSTER }}
+#        location: ${{ env.GKE_ZONE }}
+#        credentials: ${{ secrets.GKE_SA_KEY }}
+#
+#    # Build the Docker image
+#    - name: Build
+#      run: |-
+#        docker build \
+#        --tag "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
+#        --build-arg GITHUB_SHA="$GITHUB_SHA" \
+#        --build-arg GITHUB_REF="$GITHUB_REF" \
+#        .
+#    # Push the Docker image to Google Container Registry
+#    - name: Publish
+#      run: |-
+#        docker push "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
+#    # Deploy the Docker image to the GKE cluster
+#    - name: Deploy
+#      run: |-
+#       kubectl set image deployment/ece-461-app ece-461-app=us-west1-docker.pkg.dev/$PROJECT_ID/ece461-project-repo/ece-461-app:$GITHUB_SHA

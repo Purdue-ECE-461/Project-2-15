@@ -1,0 +1,22 @@
+{
+    "src/test/test10_25M": 3,
+    "src/test/test11_3G_lessKnown": 3,
+    "src/test/test12_1N_noLinfo": 1,
+    "src/test/test13_30M": 3,
+    "src/test/test14_nonNPM": 0,
+    "src/test/test15_2_incorrect": 0,
+    "src/test/test16_5_incorrectAndCorrect": 2,
+    "src/test/test17_1G_closeToIdeal": 1,
+    "src/test/test18_1N_badModule": 1,
+    "src/test/test19_20N_mostDependedUpon": 2,
+    "src/test/test1_empty": 0,
+    "src/test/test20_30N": 3,
+    "src/test/test2_10G": 6,
+    "src/test/test3_10N": 2,
+    "src/test/test4_3G": 3,
+    "src/test/test5_3N": 3,
+    "src/test/test6_uniqueG": 1,
+    "src/test/test7_1G": 1,
+    "src/test/test8_10N_emptylines": 3,
+    "src/test/test9_noLicenseInfo": 1
+}
